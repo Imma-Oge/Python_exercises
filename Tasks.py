@@ -68,3 +68,40 @@ for number in numbers:
 
 
 
+       
+        #python list that classifies items in the list as 
+        # low,medium or high.
+        #COUNT OF ITEMS BASED THIS CLASSIFICATION AND
+        #SUM OF ITEMS IN EACH CLASSIFICATION
+
+   sales = [120,450,800,50,900,300]
+   category =["Low","Medium","High"]
+
+   for item in sales:
+    if item <= 300:
+        category = "Low"
+        print(f"{item} is classified as {category}")
+    elif 300 <= item <= 700:
+        category = "Medium"
+        print(f"{item} is classified as {category}")
+    else:
+        category = "High"
+         print(f"{item} is classified as {category}")
+
+
+   # SOLIUTION 3 
+# to print even numbers only from a list of numbers
+   numbers = [12, 7, 9, 20, 33, 14, 5]
+even_numbers = []
+
+for num in numbers:
+    if num % 2 == 0:
+        print(num)
+
+print(even_numbers.append(num))
+
+#solution2 
+
+
+
+
