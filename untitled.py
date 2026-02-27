@@ -48,25 +48,101 @@
 # Sort by salary descending.
 # Sort alphabetically by name.
 
+# employees = [
+#     ["John", 50000],
+#     ["Ada", 75000],
+#     ["Musa", 60000]
+# ]
+
+# employees.sort()
+# print(employees)
+# name_sort = sorted(employees)
+# print(name_sort)
+
+# emp_sorted1 =sorted(employees,key =lambda x: x[1])
+# emp_sorted =sorted(employees,key =lambda row:row[1],reverse=True)
+# print(emp_sorted)
+# print(emp_sorted1)
+# name_sort =sorted(employees)
+# print(name_sort)
+
+
+
+fruits = ["apple", "banana", "kiwi", "mango"]
+# Sort fruits by the length of each string (shortest → longest)
+
+fruits.sort(key = lambda x: len(x))
+print(fruits)
+
 employees = [
     ["John", 50000],
     ["Ada", 75000],
     ["Musa", 60000]
 ]
 
-# for m,n in employees:
-print(employees[1].sort())
+
+
+# Sort by salary (second element) ascending.
+# Sort by name (first element) descending.
+
+desc =sorted(employees, key = lambda x: x[1], reverse=True)
+asc =sorted(employees,key = lambda x: x[1])
+print(asc)
+print(desc)
+
+numbers = [10450, -5, 3, -20, 8]
+# Find the number with the largest absolute value using max() and a lambda function.
+
+lambda x :max(x)
+print(max(numbers))
+
+students = [
+    ["Alice", 85, 20],
+    ["Bob", 90, 19],
+    ["Charlie", 85, 18]
+]
+
+# Sort students first by score descending, then by age ascending (if scores are equal).
+profile = sorted(students,key = lambda row:(-row[1], row[2]))
+
+print(profile)
+
+temperatures_c = [0, 20, 30, -5, 15]
+constant1 = 1.8
+constant2 = 32
+
+print(map(list(lambda x: float(x*constant1+constant2))))
+
+
+# Convert the temperatures to Fahrenheit using a lambda function and map().
+# Return the result as a list.
+# Explain whether the original list temperatures_c is changed.
+# constant1 = 1.8
+# constant2 = 32
+# print(list(map(temperatures_c,lambda x:(x*constant1 for x in temperatures_c)+constant2)))
+
+temperatures = [30,22,35,19,40]
+# print those above average:
+
+for n in temperatures:
+    if n> sum(temperatures)/len(temperatures):
+        print(n)
+
+given_number = [12,7,9,20,33,14,5]
+even_num = []
+# print onlly even numbers and store them in a new list
+for s in given_number:
+    if s%2 ==0: 
+        even_num.append(s)
+    print(even_num)
 
 
 
-# print(tuple(lambda row:(row(employees))))
 
 
-# # print(employees[[1:]])
-# print(list(lambda row :row))
 
-# names = ["ogechi","chizaram","david"]
-# print(sorted(names,key = len))
+
+
 
 
 
