@@ -8,19 +8,19 @@
 """
 
 # solution
-# # 
-# grade = float(input("What is your grade score? "))
+# 
+grade = float(input("What is your grade score? "))
 
-# if 3.5 <= grade <= 4.0:
-#     print("First Class Honours")
-# elif 3.0 <= grade < 3.49:  
-#     print("Second Class Honours (Upper Division)")
-# elif 2.0 <= grade < 2.99:   
-#     print("Second Class Honours (Lower Division)")
-# elif 1.0 <= grade < 2.0:
-#     print("Third Class Honours")
-# else:
-#    print("Invalid Grade") 
+if 3.5 <= grade <= 4.0:
+    print("First Class Honours")
+elif 3.0 <= grade < 3.49:  
+    print("Second Class Honours (Upper Division)")
+elif 2.0 <= grade < 2.99:   
+    print("Second Class Honours (Lower Division)")
+elif 1.0 <= grade < 2.0:
+    print("Third Class Honours")
+else:
+   print("Invalid Grade") 
 
 
 
@@ -31,17 +31,17 @@
 # For numbers that are multiples of both three and five, print "FizzBuzz".
 #  """
 
-# integers = range(1,101)
+integers = range(1,101)
 
-# for i in integers:
-#     if i % 3 ==0:
-#         print("Fizz")
-#     if i % 5 ==0:
-#         print("Buzz")
-#     if i % 3 ==0 and i % 5 ==0:
-#         print("FizzBuzz")
-#     else: 
-#         print(i)
+for i in integers:
+    if i % 3 ==0:
+        print("Fizz")
+    if i % 5 ==0:
+        print("Buzz")
+    if i % 3 ==0 and i % 5 ==0:
+        print("FizzBuzz")
+    else: 
+        print(i)
 
 
 
@@ -50,36 +50,27 @@
 # write 12 x timestable using the 2 methods
 
 
-# numbers = range(1,13)
+numbers = range(1,13)
 
-# for number in numbers:
-#     value = 12 * number
-#     print(f"12 x {number} = {value}")
+for number in numbers:
+    value = 12 * number
+    print(f"12 x {number} = {value}")
 
 # method 2 
 
-# numbers = range(1,101)
+numbers = range(1,101)
 
-# for number in numbers:
-#      value = int(number//12 )
-#      if number % 12 ==0:
-#             print(f"{number}/12 = {value}")
+for number in numbers:
+     value = int(number//12 )
+     if number % 12 ==0:
+            print(f"{number}/12 = {value}")
 
 
 
 # Given the list below
-# sales = [120,450,800,50,900,300]
+sales = [120,450,800,50,900,300]
 # Write a Python code that classifies items in the list as Low, Medium, or High. 
-# Also, do a count of items based on this classification and finally give a sum of items in each classification
-# Key: less than 300 – low
-#        > 300 <= 700 medium
-# > 700 that's high
 
-# task 2
-# From temperatures = [30,22,35,19,40], print those above average.
-
-# task 3
-   # Given numbers = [12, 7, 9, 20, 33, 14, 5], print only even numbers and store them in a new list.
 
 
 # sol
@@ -94,11 +85,12 @@ for sale in sales:
     elif sale > 700:
         print(f"{sale} is {category[2]}")
 
-# Also, do a count of items based on this classification
+# Also, do a count of items based on this classification and finally give a sum of items in each classification
 
 low_count = 0
 medium_count = 0 
 high_count = 0
+
 for sale in sales:
     if sale < 300:
         low_count += 1
@@ -108,3 +100,5 @@ for sale in sales:
         high_count += 1
 
 print(f"Low: {low_count}, Medium: {medium_count}, High: {high_count}")
+
+
